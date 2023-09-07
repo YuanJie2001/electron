@@ -1,0 +1,67 @@
+{
+  "name": "wallpaper-engine",
+  "version": "1.0.2",
+  "description": "wallpaper-engine 壁纸程序",
+  "main": "./src/main/index.js",
+  "scripts": {
+    "dev:web": "vue-cli-service serve",
+    "dev:exe": "./node_modules/.bin/electron ./",
+    "build:web": "vue-cli-service build ",
+    "build:exe": "./node_modules/.bin/electron-builder build"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "electron-store": "^8.1.0",
+    "wallpaper": "^5.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^4.5.0",
+    "babel-plugin-component": "^1.1.1",
+    "electron": "^12.1.0",
+    "electron-builder": "^22.8.1",
+    "hotkeys-js": "^3.10.1",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.1",
+    "vue": "^2.6.11",
+    "vue-router": "^3.6.5",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "author": {
+    "name": "YuanJie",
+    "email": "782353676@qq.com"
+  },
+  "homepage": "http://www.vector.com",
+  "build": {
+    "appId": "com.vector.wallpaper-engine",
+    "copyright": "©2023 MAL. All rights reserved.",
+    "productName": "wallpaper-engine",
+    "files": {
+      "filter": [
+        "!**/node_modules/*",
+        "!**/layout/*",
+        "!**/public/*"
+      ]
+    },
+    "directories": {
+      "output": "./dist"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "./build/logo64x64.ico",
+      "uninstallerIcon": "./build/logo64x64.ico",
+      "installerHeaderIcon": "./build/logo64x64.ico",
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "wallpaper"
+    },
+    "win": {
+      "icon": "./build/logo256x256.ico"
+    },
+    "mac": {
+      "icon": "./build/logo512x512.ico"
+    }
+  }
+}

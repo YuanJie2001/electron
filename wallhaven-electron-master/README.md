@@ -4,8 +4,7 @@
 一款基于 Electron 壁纸客户端 。
 </div>
 
-- gitee：https://gitee.com/ml13/wallhaven-electron
-- github：https://github.com/MaLuns/wallhaven-electron
+- github：https://github.com/YuanJie2001/electron/tree/main/wallhaven-electron-master
 
 ## 运行
 ```
